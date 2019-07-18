@@ -1,1 +1,1 @@
-Prosta faktura w \{LaTeX}.
+Prosta faktura w LaTeX.
