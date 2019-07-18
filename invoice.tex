@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+
+\setlength{\marginparwidth}{0pt}
+\setlength{\parindent}{0pt}
+\addtolength{\hoffset}{-50pt}
+\pagestyle{empty}
+
+% Dane do faktury
+\newcommand{\datawystawienia}{31.07.2019}
+\newcommand{\terminplatnosci}{14.08.2019}
+\newcommand{\nrfaktury}{0/2019} 
+\newcommand{\netto}{0.00} 
+\newcommand{\vat}{0.00}
+\newcommand{\brutto}{0.00}
+\newcommand{\slownie}{zero 0/100}
+\newcommand{\product}{Adwokat diabła}
+% Koniec danych do faktury
+
+\begin{document}
+
+\begin{tabular}{p{0.8\textwidth} l l}
+    \textit{Sprzedawca:} & Data wystawienia: & \datawystawienia \\
+    Moja firma & & \\
+    ul. Słoneczna 42/24 & & \\
+    00-000 Kolonia & & \\
+    NIP: 0000000000 & & \\ 
+                   & & \\
+    Bank: Mój Bank & & \\
+    Konto: 00 0000 0000 0000 0000 0000 0000 & & \\
+\end{tabular}
+\ \\ \ \\
+\centerline{\hspace{50pt}\LARGE{Faktura VAT nr \nrfaktury}}\\
+% \centerline{\hspace{50pt}(oryginał / kopia)}\\
+\ \\
+\textit{Nabywca:} \\
+\ \\
+Firma Nabywająca Sp. z o.o.\\
+ul. Nabywców 42, 00-000 Nabytów\\
+NIP: 0000000000\\
+
+\begin{tabular}{r p{6cm} l r p{2cm} l r p{2cm}}
+    \hline 
+    Lp & Nazwa usługi & j.m. & Ilość & Wartość netto
+    & VAT & Podatek & Wartość z podatkiem \\ 
+    \hline
+    % sprzedane usługi 
+    % Numer pozycji & Nazwa & Jednostka & Ilość & Wartość netto
+    % & VAT & Podatek & Wartość z podatkiem
+    1 & \product & szt & 1 & \netto & 23 \% & \vat & \brutto \\
+    \hline
+    & & & Razem: & \netto & & \vat & \brutto \\
+    \\
+\end{tabular}
+
+\ \\
+Słownie: \slownie\\
+\ \\
+Forma płatności: PRZELEW \\
+Termin płatności: \terminplatnosci \\
+
+
+\ \\ \ \\ \ \\
+..............................\hspace{220pt}..............................\\
+\ \ \ Osoba odbierająca\hspace{225pt}\mbox{Osoba wystawiająca}
+
+\end{document}
